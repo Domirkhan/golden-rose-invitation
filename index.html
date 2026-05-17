@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Қыз ұзату — Аружан</title>
+  <meta name="description" content="Аружанның қыз ұзату тойына шақыру. Сізді осы ерекше күнді бізбен бөлісуге шақырамыз." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="grain"></div>
+
+  <!-- HERO -->
+  <header class="hero" id="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__overlay"></div>
+
+    <nav class="nav">
+      <div class="nav__logo">A &amp; Family</div>
+      <ul class="nav__links">
+        <li><a href="#hero">Басты бет</a></li>
+        <li><a href="#countdown">Кері санақ</a></li>
+        <li><a href="#about">Іс-шара</a></li>
+        <li><a href="#rsvp">Растау</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero__content reveal">
+      <p class="hero__eyebrow">— Сүйікті қызымыздың —</p>
+      <h1 class="hero__title">Қыз&nbsp;Ұзату</h1>
+      <p class="hero__name">Аружан</p>
+      <p class="hero__sub">Сізді біздің отбасымыздың ең ерекше күніне<br/>құрметпен шақырамыз</p>
+
+      <div class="hero__meta">
+        <div><span>Күні</span><strong>15 Тамыз 2026</strong></div>
+        <div class="divider"></div>
+        <div><span>Уақыты</span><strong>18:00</strong></div>
+        <div class="divider"></div>
+        <div><span>Мекенжайы</span><strong>«Алтын Орда» мейрамханасы</strong></div>
+      </div>
+
+      <a href="#rsvp" class="btn btn--gold">Қатысатыныңызды растаңыз</a>
+    </div>
+
+    <div class="scroll-hint">
+      <span></span>
+      <p>Төмен сырғытыңыз</p>
+    </div>
+  </header>
+
+  <!-- COUNTDOWN -->
+  <section class="countdown" id="countdown">
+    <div class="container reveal">
+      <p class="eyebrow">Ерекше күнге дейін</p>
+      <h2 class="section-title">Кері санақ</h2>
+      <div class="timer" id="timer" aria-live="polite">
+        <div class="timer__box"><span id="days">00</span><p>Күн</p></div>
+        <div class="timer__box"><span id="hours">00</span><p>Сағат</p></div>
+        <div class="timer__box"><span id="minutes">00</span><p>Минут</p></div>
+        <div class="timer__box"><span id="seconds">00</span><p>Секунд</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="reveal">
+        <p class="eyebrow">Шақыру</p>
+        <h2 class="section-title">Құрметті қонақтар!</h2>
+        <p class="about__text">
+          Өмірдің ең ерекше, ең нәзік сәттерінің бірі — қыз ұзату тойы.
+          Сүйікті қызымыз <strong>Аружанды</strong> жаңа өмірге ақ тілекпен шығарып салу
+          рәсіміне Сізді отбасымызбен бірге шын жүректен шақырамыз.
+          Бұл қуанышты сәтті бізбен бөліссеңіз, мерейіміз тасып, шаттығымыз еселене түсер еді.
+        </p>
+      </div>
+
+      <div class="cards">
+        <article class="card glass reveal">
+          <div class="card__icon">❖</div>
+          <h3>Күні</h3>
+          <p>15 Тамыз</p>
+          <span>Сенбі, 2026 жыл</span>
+        </article>
+        <article class="card glass reveal" style="transition-delay:.1s">
+          <div class="card__icon">✦</div>
+          <h3>Уақыты</h3>
+          <p>18:00</p>
+          <span>Кешкі салтанат</span>
+        </article>
+        <article class="card glass reveal" style="transition-delay:.2s">
+          <div class="card__icon">✿</div>
+          <h3>Мекенжайы</h3>
+          <p>«Алтын Орда»</p>
+          <span>Абай даңғылы, 22, Алматы</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- RSVP -->
+  <section class="rsvp" id="rsvp">
+    <div class="container rsvp__wrap">
+      <div class="reveal">
+        <p class="eyebrow">RSVP</p>
+        <h2 class="section-title">Қатысуыңызды растаңыз</h2>
+        <p class="rsvp__text">Сіздің жауабыңыз біз үшін өте маңызды. Өтінеміз, 1 тамызға дейін растауыңызды сұраймыз.</p>
+      </div>
+
+      <form class="form glass reveal" id="rsvpForm" novalidate>
+        <div class="field">
+          <label for="name">Аты-жөніңіз</label>
+          <input type="text" id="name" name="name" placeholder="Мысалы: Айгүл Серікқызы" required />
+          <small class="error" id="nameError"></small>
+        </div>
+
+        <div class="field">
+          <label for="guests">Қонақ саны</label>
+          <input type="number" id="guests" name="guests" min="1" max="10" value="1" />
+        </div>
+
+        <fieldset class="field field--radio">
+          <legend>Жауабыңыз</legend>
+          <label class="radio">
+            <input type="radio" name="attend" value="yes" checked />
+            <span>Қуана қатысамын</span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="attend" value="no" />
+            <span>Өкінішке орай, қатыса алмаймын</span>
+          </label>
+        </fieldset>
+
+        <button type="submit" class="btn btn--gold btn--block">Жіберу</button>
+        <p class="form__success" id="success" hidden>Рақмет! Жауабыңыз қабылданды 💛</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p class="footer__name">Аружан</p>
+    <p class="footer__text">Сіздің қатысуыңыз — біз үшін ең қымбат сыйлық</p>
+    <p class="footer__copy">© 2026 · Махаббатпен жасалды</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
