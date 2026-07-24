@@ -268,9 +268,7 @@ a {
   letter-spacing: .08em;
 }
 
-.music-button.is-playing .music-button__icon {
-  animation: beat .7s ease-in-out infinite alternate;
-}
+
 
 .scroll-down {
   position: absolute;
@@ -360,8 +358,9 @@ a {
 .ornament-strip {
   width: min(280px, 82%);
   height: 54px;
-  margin: 46px auto 0;
+  margin: 20px auto 20px;
   opacity: .72;
+  background-color: rgba(255, 250, 243, .9);
   background:
     radial-gradient(circle at 50% 50%, transparent 0 12px, var(--gold) 13px 14px, transparent 15px),
     radial-gradient(circle at 25% 50%, transparent 0 9px, rgba(198, 155, 73, .7) 10px 11px, transparent 12px),
@@ -764,19 +763,19 @@ a {
 
 .reveal {
   opacity: 0;
-  filter: blur(8px);
-  transform: translateY(34px) scale(.985);
+  filter: blur(4px);
+  transform: translate3d(0, 20px, 0);
   transition:
-    opacity 1s ease,
-    filter 1s ease,
-    transform 1s cubic-bezier(.2, .7, .3, 1);
+    opacity .9s cubic-bezier(.22, 1, .36, 1),
+    filter .9s cubic-bezier(.22, 1, .36, 1),
+    transform .9s cubic-bezier(.22, 1, .36, 1);
   will-change: opacity, filter, transform;
 }
 
 .reveal.is-visible {
   opacity: 1;
   filter: blur(0);
-  transform: none;
+  transform: translate3d(0, 0, 0);
 }
 
 @keyframes petalFall {
